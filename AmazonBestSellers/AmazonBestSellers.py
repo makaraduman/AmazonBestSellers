@@ -13,8 +13,8 @@ soup = BeautifulSoup(html_content,"html.parser")
 a = float(input("Enter Your Rating:"))
 
 
-title = soup.find_all("td",{"class":"titleColumn"})
-rating = soup.find_all("td",{"class","ratingColumn imdbRating"})
+title = soup.find_all("li",{"class":"p13n-sc-truncated"})
+rating = soup.find_all("td",{"class","a-size-small a-link-normal"})
 
 
 for title, rating in zip(title,ratingler):
