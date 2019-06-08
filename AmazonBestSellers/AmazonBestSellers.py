@@ -14,7 +14,7 @@ a = float(input("Enter Your Rating:"))
 
 
 title = soup.find_all("li",{"class":"p13n-sc-truncated"})
-rating = soup.find_all("td",{"class","a-size-small a-link-normal"})
+rating = soup.find_all("a",{"class","a-size-small a-link-normal"})
 
 
 for title, rating in zip(title,ratingler):
